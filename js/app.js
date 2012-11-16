@@ -2,6 +2,8 @@
 
 var timeline = {
 	
+	presenter: {},
+
 	resizeTimerID: null,
 
 	tl: null,
@@ -9,6 +11,10 @@ var timeline = {
 	init: function() {
 		this.drawLayout();
 		window.onresize = this.resize;
+
+		for(var e in this.presenter) {
+			if(this.presenter[e].init) this.presenter[e].init();
+		}
 	},
 	
 	drawLayout: function() {
@@ -70,7 +76,13 @@ var timeline = {
 		bandInfos[2].highlight = true;
 		
 		this.tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
-		this.tl.loadJSON("data.json?"+ (new Date().getTime()), function(json, url) { eventSource.loadJSON(json, url); });
+		/*this.tl.loadJSON("data.json?"+ (new Date().getTime()), function(json, url) { 
+			eventSource.loadJSON(json, url); 
+		});*/
+		timeline.repository.getEvents(function(json, url) {	
+			eventSource.loadJSON(json, url); 
+		});
+
 	},
 	
 	resize: function() {

@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Test slider</title>
+	<script type="text/javascript" src="jquery_1.2.3\jquery.js"></script>
+	<script type="text/javascript" src="jquery.vegas.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery.vegas.css">
+	<script type="text/javascript">
+
+		window.onload = function() {
+
+			$.vegas({
+			  src:'overlays/15.png'
+			});
+
+
+			$.vegas('slideshow', {
+			  backgrounds:[
+			    { src:'images/4.jpg', fade:1000 },
+			    { src:'images/2.jpg', fade:1000 },
+			    { src:'images/3.jpg', fade:1000 }
+			  ]
+			});
+			/*('overlay', {
+			  src:'images/1.jpg'
+			});*/
+
+		}
+
+	</script>
+</head>
+<body>
+	<div id="overlay"></div>
+	<div id="slideshow"></div>
+</body>
+</html>

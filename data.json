@@ -3,12 +3,14 @@
     "dateTimeFormat": "iso8601",
     "events": [
         {
+            "id": 1,
             "title": "La Brassiere",
             "id":    "/en/la_brassiere",
             "start": "2001-09-27",
             "icon":  "http://www.freebase.com/api/trans/image_thumb//wikipedia/images/en_id/2462532?maxheight=76&amp;mode=fillcrop&amp;maxwidth=76",
 			"image": "http://static.comunicadores.info/uploads/2012/05/turma-chaves-seriado-fotos-raras-10-610x366.jpg",
-			"type": "image"
+			"type": "image",
+            "related": "[1,2,3,4,5,6,]"
         },
         {
             "title": "Mujhe Kucch Kehna Hai",
@@ -16,8 +18,8 @@
             "start": "2001-05-25"
         },
         {
+            "id": 2,
             "title": "Bubble Boy",
-            "id":    "/en/bubble_boy",
             "start": "2001-08-24",
             "icon":  "http://www.freebase.com/api/trans/image_thumb//wikipedia/images/en_id/948834?maxheight=76&amp;mode=fillcrop&amp;maxwidth=76",
 			"image": "http://static.comunicadores.info/uploads/2012/05/turma-chaves-seriado-fotos-raras-10-610x366.jpg",
