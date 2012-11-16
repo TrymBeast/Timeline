@@ -1,0 +1,111 @@
+
+{
+    "dateTimeFormat": "iso8601",
+    "events": [
+        {
+            "id": 100,
+            "title": "Largo do rato",
+            "start": "1939-09-27",
+            "icon":  "gallery/thumbs/largo do rato/Largo_do_rato_1939.jpg",
+			"image": "gallery/images/largo do rato/Largo_do_rato_1939.jpg",
+			"type": "image"
+        },
+        {
+            "id": 101,
+            "title": "Martim moniz",
+            "start": "1946-08-27",
+            "icon":  "gallery/thumbs/martim moniz/Martim_moniz_1946.jpg",
+            "image": "gallery/images/martim moniz/Martim_moniz_1946.jpg",
+            "type": "image"
+        },
+        {
+            "id": 102,
+            "title": "Mosteiro dos jerónimos",
+            "start": "1946-08-27",
+            "icon":  "gallery/thumbs/mosteiro jeronimos/Mosteiro_dos_geronimos_1879.jpg",
+            "image": "gallery/images/mosteiro jeronimos/Mosteiro_dos_geronimos_1879.jpg",
+            "type": "image",
+            "related": "[102, 103]"
+        },
+        {
+            "id": 103,
+            "title": "Mosteiro dos jerónimos",
+            "start": "2000-02-06",
+            "icon":  "gallery/thumbs/mosteiro jeronimos/mosteiro-dos-jeronimos2.jpg",
+            "image": "gallery/images/mosteiro jeronimos/mosteiro-dos-jeronimos2.jpg",
+            "type": "image",
+            "related": "[102, 103]"
+        },
+        {
+            "id": 104,
+            "title": "Ponte 25 de Abril",
+            "start": "1947-08-27",
+            "icon":  "gallery/thumbs/ponte 25 abril/Construcao_ponte_salazar_1.jpg",
+            "image": "gallery/images/ponte 25 abril/Construcao_ponte_salazar_1.jpg",
+            "type": "image",
+            "related": "[104, 105, 106]"
+        },
+        {
+            "id": 105,
+            "title": "Ponte 25 de Abril",
+            "start": "1987-10-20",
+            "icon":  "gallery/thumbs/ponte 25 abril/Construcao_ponte_salazar_2.jpg",
+            "image": "gallery/images/ponte 25 abril/Construcao_ponte_salazar_2.jpg",
+            "type": "image",
+            "related": "[104, 105, 106]"
+        },
+        {
+            "id": 106,
+            "title": "Ponte 25 de Abril",
+            "start": "2003-04-02",
+            "icon":  "gallery/thumbs/ponte 25 abrilponte%2025%20abril%20mais%20o%20cristo.jpg",
+            "image": "gallery/images/ponte 25 abril/ponte%2025%20abril%20mais%20o%20cristo.jpg",
+            "type": "image",
+            "related": "[104, 105, 106]"
+        },
+        {
+            "id": 107,
+            "title": "Praça Dom Pedro IV",
+            "start": "1920-04-02",
+            "icon":  "gallery/thumbs/praca d pedro iv/Praca_D_Pedro_IV_1920_i.jpg",
+            "image": "gallery/images/praca d pedro iv/Praca_D_Pedro_IV_1920_i.jpg",
+            "type": "image"
+        },
+        {
+            "id": 108,
+            "title": "Teatro Dona Maria II",
+            "start": "1940-04-02",
+            "icon":  "gallery/thumbs/teatro d maria ii/Teatro_nacional_dona_Maria_II_1940.jpg",
+            "image": "gallery/images/teatro d maria ii/Teatro_nacional_dona_Maria_II_1940.jpg",
+            "type": "image",
+            "related": "[108, 109]"
+        },
+        {
+            "id": 109,
+            "title": "Teatro Dona Maria II",
+            "start": "1984-04-02",
+            "icon":  "gallery/thumbs/teatro d maria ii/Teatro D Maria II 01.jpg",
+            "image": "gallery/images/teatro d maria ii/Teatro D Maria II 01.jpg",
+            "type": "image",
+            "related": "[108, 109]"
+        },
+        {
+            "id": 110,
+            "title": "Torre de belém",
+            "start": "1912-04-02",
+            "icon":  "gallery/thumbs/torre belem/Torre_de_belem_1912.jpg",
+            "image": "gallery/images/torre belem/Torre_de_belem_1912.jpg",
+            "type": "image",
+            "related": "[110, 111]"
+        },
+        {
+            "id": 111,
+            "title": "Torre de belém",
+            "start": "2010-06-02",
+            "icon":  "gallery/thumbs/torre belem/Torre_Belem_small2010.jpg",
+            "image": "gallery/images/torre belem/Torre_Belem_small2010.jpg",
+            "type": "image",
+            "related": "[110, 111]"
+        }
+    ]
+}
