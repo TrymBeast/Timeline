@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/webcam.css"/>
+		<script src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
+		<script src="js/webcam.js"></script>
+		<script>
+			jQuery(document).ready(
+				function(){
+					webcam.show();
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="webcam">
+			<video id="sourcevid" autoplay></video>
+			<input type="button" id="snapshot" value="Take snapshot">
+		</div>
+	</body>
+</html>
