@@ -267,7 +267,7 @@
             "icon":  "gallery/thumbs/estadio da luz/Luz1954.jpg",
             "image": "gallery/images/estadio da luz/Luz1954.jpg",
             "type": "image",
-            "related": "[1017,1017,1018,1020]"
+            "related": "[1017,1018,1019,1020]"
         },
         {
             "id": "1018",
@@ -276,7 +276,7 @@
             "icon":  "gallery/thumbs/estadio da luz/Estadio1990.jpg",
             "image": "gallery/images/estadio da luz/Estadio1990.jpg",
             "type": "image",
-            "related": "[1017,1017,1018,1020]"
+            "related": "[1017,1018,1019,1020]"
         },
         {
             "id": "1019",
@@ -285,7 +285,7 @@
             "icon":  "gallery/thumbs/estadio da luz/estadio_da_luz1991.jpg",
             "image": "gallery/images/estadio da luz/estadio_da_luz1991.jpg",
             "type": "image",
-            "related": "[1017,1017,1018,1020]"
+            "related": "[1017,1018,1019,1020]"
         },
         {
             "id": "1020",
@@ -294,7 +294,7 @@
             "icon":  "gallery/thumbs/estadio da luz/wall_5_8001998.jpg",
             "image": "gallery/images/estadio da luz/wall_5_8001998.jpg",
             "type": "image",
-            "related": "[1017,1017,1018,1020]"
+            "related": "[1017,1018,1019,1020]"
         }       
     ]
 }
