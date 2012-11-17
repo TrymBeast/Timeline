@@ -20,8 +20,8 @@ timeline.repository = {
 	},
 
 	getEventById: function(id) {
-		for(var i = 0; i < this.events.length; ++i){
-			if(this.events[i].id === id) return this.events[i];
+		for(var i = 0; i < this.events.events.length; ++i){
+			if(this.events.events[i].id == id) return this.events.events[i];
 		}
 
 		return null;
@@ -31,8 +31,9 @@ timeline.repository = {
 		var related = [];
 
 		if(event.related) {
-			for(var i = 0; i<event.related.length; ++i){
-				related.push( this.getEventById(event.related[i]) );
+			var rel = eval('(' + event.related + ')');
+			for(var i = 0; i < rel.length; ++i){
+				related.push( this.getEventById( rel[i] ) );
 			}
 		}
 

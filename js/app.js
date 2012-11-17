@@ -25,12 +25,12 @@ var timeline = {
 		theme.event.instant.iconWidth = 40;  // These are for the default stand-alone icon
 		theme.event.instant.iconHeight = 40;
 		
-		var d = Timeline.DateTime.parseIso8601DateTime("2001-06-10");
+		var d = Timeline.DateTime.parseIso8601DateTime("1939-09-27");
 		
 		var bandInfos = [
 			Timeline.createBandInfo({
-				width:          "86%", 
-				intervalUnit:   Timeline.DateTime.WEEK, 
+				width:          "100%", 
+				intervalUnit:   Timeline.DateTime.YEAR, 
 				intervalPixels: 150,
 				eventSource:    eventSource,
 				date:           d,
@@ -49,7 +49,7 @@ var timeline = {
 						iconHeight:             80
 					}
 				}
-			}),
+			})/*,
 			Timeline.createBandInfo({
 				width:          "7%", 
 				intervalUnit:   Timeline.DateTime.MONTH, 
@@ -67,13 +67,13 @@ var timeline = {
 				date:           d,
 				theme:          theme,
 				layout:         'overview'  // original, overview, detailed
-			})
+			})*/
 		];
-		bandInfos[1].syncWith = 0;
+		/*bandInfos[1].syncWith = 0;
 		bandInfos[1].highlight = true;
 		
 		bandInfos[2].syncWith = 1;
-		bandInfos[2].highlight = true;
+		bandInfos[2].highlight = true;*/
 		
 		this.tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
 		/*this.tl.loadJSON("data.json?"+ (new Date().getTime()), function(json, url) { 

@@ -51,3 +51,26 @@ body {
 .hide {
 	display: none;
 }
+
+#imageGallery .ad-thumb-list {
+
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+
+/********************START OF HACK!!*****************************/
+.ad-gallery .ad-thumbs li {
+	float: none!important;
+	display: inline!important;
+}
+
+.ad-gallery .ad-thumbs li a {
+	display: inline!important;
+}
+
+.ad-gallery .ad-thumbs li a img {
+	display: inline!important;
+}
+/********************END OF HACK!!*****************************/

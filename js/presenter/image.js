@@ -67,16 +67,16 @@ timeline.presenter.image = {
 
         function createNode(obj) {
 
+        	var title = obj.title + " " + obj.start;
         	return '<li>' + 
         			'<a href="' + obj.image + '">' +
-        				'<img src="' + obj.icon + '" title ="' + obj.title + '" />'
+        				'<img src="' + obj.icon + '" title ="' + title + '" />'
         			'</a>' +
         		'</li>';
         }
 
-        ul.append( $(createNode(obj)) );
         $(related).each(function(){
-        	ul.append( $(createNode(obj)) );
+        	ul.append( $(createNode( $(this)[0] )) );
         });
 
 		return html;
