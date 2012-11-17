@@ -5,21 +5,38 @@ var webcam = {
 	snapshotButton: null,
 	imgElement: null,
 	stream: null,
+	shown: false,
 	
 	init: function(videoElement, snapshotButton, imgElement)
 	{
+		var self = this;
+	
+		$(document).keyup(function(e){
+		    if(e.keyCode === 27 && self.shown) self.hide();
+		});
+	
 		this.videoElement = $(videoElement);
 		this.snapshotButton = $(snapshotButton);
 		this.imgElement = $(imgElement);
 		
-		this.snapshotButton.click(webcam.snapshot);
+		this.snapshotButton.click(this.snapshot);
 	},
 	show: function() {
-		$('#webcam').fadeTo("slow", 0.8, function(){webcam.start();});
-		$('#webcam').click(function(){webcam.hide();});
+		if(this.shown) return;
+
+		this.shown = true;
+		
+		$('#webcam-overlay').fadeTo("slow", 0.9);
+		$('#webcam').fadeTo("slow", 1, this.start);
+		//$('#webcam-overlay').click(this.hide);
 	},
 	hide: function() {
-		$('#webcam').fadeTo("slow", 0, function(){webcam.stop();});
+		if(!this.shown) return;
+
+		this.shown = false;
+
+		$('#webcam-overlay').fadeTo("slow", 0);
+		$('#webcam').fadeTo("slow", 0, this.stop);
 	},
 	start: function() {
 		var onFailSoHard = function(e) {
@@ -37,6 +54,7 @@ var webcam = {
 		}, onFailSoHard);
 	},
 	stop: function() {
+		webcam.stream = null;
 		webcam.videoElement.attr('src','');
 	},
 	snapshot: function(evt) {
