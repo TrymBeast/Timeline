@@ -15,6 +15,11 @@ var timeline = {
 		for(var e in this.presenter) {
 			if(this.presenter[e].init) this.presenter[e].init();
 		}
+
+		timeline.photo.init();
+		$(".camera").click(function(){
+			timeline.photo.show();
+		});
 	},
 	
 	drawLayout: function() {
@@ -29,7 +34,7 @@ var timeline = {
 		
 		var bandInfos = [
 			Timeline.createBandInfo({
-				width:          "100%", 
+				width:          "86%", 
 				intervalUnit:   Timeline.DateTime.YEAR, 
 				intervalPixels: 150,
 				eventSource:    eventSource,
@@ -49,10 +54,10 @@ var timeline = {
 						iconHeight:             80
 					}
 				}
-			})/*,
+			}),
 			Timeline.createBandInfo({
 				width:          "7%", 
-				intervalUnit:   Timeline.DateTime.MONTH, 
+				intervalUnit:   Timeline.DateTime.DECADE, 
 				intervalPixels: 100,
 				eventSource:    eventSource,
 				date:           d,
@@ -61,19 +66,19 @@ var timeline = {
 			}),
 			Timeline.createBandInfo({
 				width:          "7%", 
-				intervalUnit:   Timeline.DateTime.YEAR, 
+				intervalUnit:   Timeline.DateTime.CENTURY, 
 				intervalPixels: 100,
 				eventSource:    eventSource,
 				date:           d,
 				theme:          theme,
 				layout:         'overview'  // original, overview, detailed
-			})*/
+			})
 		];
-		/*bandInfos[1].syncWith = 0;
+		bandInfos[1].syncWith = 0;
 		bandInfos[1].highlight = true;
 		
 		bandInfos[2].syncWith = 1;
-		bandInfos[2].highlight = true;*/
+		bandInfos[2].highlight = true;
 		
 		this.tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
 		/*this.tl.loadJSON("data.json?"+ (new Date().getTime()), function(json, url) { 

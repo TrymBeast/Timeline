@@ -1,4 +1,17 @@
 
+
+/*#header {
+	margin-top: 70px;
+	height: 50px;
+}*/
+
+#main{
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 70%;*/
+}
+
+
 div.timeline-event-icon {
 	border: 1px solid #aaa;
 	padding: 1px;
@@ -35,7 +48,7 @@ body {
 	opacity: 0.9;
 }
 
-#imageGallery {
+#imageGallery, #media {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -59,6 +72,78 @@ body {
 	text-align: center;
 }
 
+#video, #canvas {
+	width: 640px;
+	height: 480px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#snap {
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	height: 57px;
+}
+
+.loading {
+	position: absolute;
+	left: 487px;
+	top: 173px;
+}
+
+#fakePhotos, #female {
+	display: block;
+	margin-top: 124px;
+	margin-left: 93px;
+}
+
+#fakePhotos div {
+	display: inline;
+}
+
+#fakePhotos span {
+	position: relative;
+	top: 27px;
+	left: -180;
+	color: white;
+	font-size: 26px;
+}
+
+#fakePhotos a, #female a {
+	bottom: 10px;
+	right: 0px;
+	position: fixed;
+	color: white;
+}
+
+a.action-add {
+	right: 130px!important;
+}
+
+a.action-more {
+    right: 20px!important;
+}
+
+#female img {
+	width: 600px;
+	margin-left: 234px;
+	margin-top: -47px;
+}
+
+.camera {
+	cursor: pointer;
+	position: absolute;
+	z-index: 99999;
+	left: 0;
+	top: 493;;
+	width: 60px;
+	height: 60px;	
+}
 
 /********************START OF HACK!!*****************************/
 .ad-gallery .ad-thumbs li {

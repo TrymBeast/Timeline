@@ -15,8 +15,9 @@ var webcam = {
 		this.snapshotButton.click(webcam.snapshot);
 	},
 	show: function() {
-		$('#webcam').fadeTo("slow", 0.8, function(){webcam.start();});
-		$('#webcam').click(function(){webcam.hide();});
+		//$('#webcam').fadeTo("slow", 0.8, function(){webcam.start();});
+		//$('#webcam').click(function(){webcam.hide();});
+		this.start();
 	},
 	hide: function() {
 		$('#webcam').fadeTo("slow", 0, function(){webcam.stop();});
@@ -29,12 +30,30 @@ var webcam = {
 		navigator.getUserMedia  = navigator.getUserMedia || navigator.webkitGetUserMedia ||
 								  navigator.mozGetUserMedia || navigator.msGetUserMedia;
 
-		navigator.getUserMedia({video: true, audio: false}, function(stream) {
+		/*navigator.getUserMedia({video: true, audio: false}, function(stream) {
 			
 			webcam.videoElement.attr('src',window.URL.createObjectURL(stream));
 			webcam.stream = stream;
 			
-		}, onFailSoHard);
+		}, onFailSoHard);*/
+		
+		var videoObj = {video: true, audio: false},
+			errBack = function(error) {
+		    	console.log("Video capture error: ", error.code); 
+		    };
+
+		// Put video listeners into place
+	  	if(navigator.getUserMedia) { // Standard
+	    	navigator.getUserMedia(videoObj, function(stream) {
+	      		webcam.videoElement[0].src = stream;
+	      		webcam.videoElement[0].play();
+	    	}, errBack);
+	  	} else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
+	    	navigator.webkitGetUserMedia(videoObj, function(stream){
+	      		webcam.videoElement[0].src = window.webkitURL.createObjectURL(stream);
+	      		webcam.videoElement[0].play();
+	    	}, errBack);
+  		}	
 	},
 	stop: function() {
 		webcam.videoElement.attr('src','');

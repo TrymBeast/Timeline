@@ -1,6 +1,7 @@
 
 <html>
   <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>SIMILE Widgets | Timeline | Examples | Compact Painter</title>
 	<link rel='stylesheet' href='css/main.css' type='text/css' />
 	<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
@@ -11,19 +12,57 @@
 	<script src="js/presenter/image.js" type="text/javascript"></script>
 	<script src="js/repository/timeline.js" type="text/javascript"></script>
 	<script src="js/timelinepatch.js" type="text/javascript"></script>
-
+	<script type="text/javascript" src="js/photo.js"></script>
 	<link rel="stylesheet" type="text/css" href="lib/AD Gallery 1.2.7/lib/jquery.ad-gallery.css">
 	<script src="lib/AD Gallery 1.2.7/lib/jquery.ad-gallery.js" type="text/javascript"></script>
 
   </head>
   <body>
-    <div id="content">
-      <div id="tl" class="timeline-default" style="height: 100%;"></div>
-    </div>
 
-    <div id="overlay" class='hide'></div>
-    <div id="imageGallery" class='hide'></div>
+  	<div id="main">
 
+  		<div id="header"></div>
+
+	    <div id="content">
+	      <div id="tl" class="timeline-default" style="height: 100%;"></div>
+	      <img class='camera' src="images/camera.png" />
+	    </div>
+
+	    <div id="overlay" class='hide'></div>
+	    <div id="imageGallery" class='hide'></div>
+
+	    <div id="media" class='hide'>
+	    	<video id="video" width="640" height="480" autoplay></video>
+			<button id="snap">Snap Photo</button>
+			<canvas id="canvas" width="640" height="480" class='hide'></canvas>
+			<img class='loading hide' src="images/loading.gif" />
+
+			<div id="fakePhotos" class='hide' style="display:none;">
+				<div>
+					<img title="2020" src="gallery/child.jpg" />
+					<span>1990</span>
+				</div>
+				<div>	
+					<img title="2030" src="gallery/now.jpg" />
+					<span>2012</span>
+				</div>	
+				<div>
+					<img title="2040" src="gallery/old.jpg" />
+					<span>2040</span>
+				</div>
+
+				<a class='action-add' href="#">Adicionar</a>
+				<a class="action-more" href="#">Versão feminina</a>
+			</div>
+
+			<div id="female" class="hide" style="display:none;">
+				<img title="female" src="gallery/female.jpg" />
+				<a class='action-add' href="#">Adicionar</a>
+				<a class="action-more" href="#">Versão masculina</a>
+			</div>
+
+	    </div>
+	</div>
 
 	<script type="text/javascript">
 		timeline.init();
