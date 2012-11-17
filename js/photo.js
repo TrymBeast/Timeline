@@ -49,7 +49,7 @@ timeline.photo = {
 	show: function() {
 
 		this.shown = true;
-		$('#media, #overlay').show();
+		$('#media, #overlay, #snap').show();
 
 		var self = this;
 		$("#video").show();
