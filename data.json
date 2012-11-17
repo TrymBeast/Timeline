@@ -1,4 +1,4 @@
-
+ï»¿
 {
     "dateTimeFormat": "iso8601",
     "events": [
@@ -20,7 +20,7 @@
         },
         {
             "id": "102",
-            "title": "Mosteiro dos jerónimos",
+            "title": "Mosteiro dos jerÃ³nimos",
             "start": "1946-08-27",
             "icon":  "gallery/thumbs/mosteiro jeronimos/Mosteiro_dos_geronimos_1879.jpg",
             "image": "gallery/images/mosteiro jeronimos/Mosteiro_dos_geronimos_1879.jpg",
@@ -29,7 +29,7 @@
         },
         {
             "id": "103",
-            "title": "Mosteiro dos jerónimos",
+            "title": "Mosteiro dos jerÃ³nimos",
             "start": "2000-02-06",
             "icon":  "gallery/thumbs/mosteiro jeronimos/mosteiro-dos-jeronimos2.jpg",
             "image": "gallery/images/mosteiro jeronimos/mosteiro-dos-jeronimos2.jpg",
@@ -65,7 +65,7 @@
         },
         {
             "id": "107",
-            "title": "Praça Dom Pedro IV",
+            "title": "PraÃ§a Dom Pedro IV",
             "start": "1920-04-02",
             "icon":  "gallery/thumbs/praca d pedro iv/Praca_D_Pedro_IV_1920_i.jpg",
             "image": "gallery/images/praca d pedro iv/Praca_D_Pedro_IV_1920_i.jpg",
@@ -91,7 +91,7 @@
         },
         {
             "id": "110",
-            "title": "Torre de belém",
+            "title": "Torre de belÃ©m",
             "start": "1912-04-02",
             "icon":  "gallery/thumbs/torre belem/Torre_de_belem_1912.jpg",
             "image": "gallery/images/torre belem/Torre_de_belem_1912.jpg",
@@ -100,7 +100,7 @@
         },
         {
             "id": "111",
-            "title": "Torre de belém",
+            "title": "Torre de belÃ©m",
             "start": "2010-06-02",
             "icon":  "gallery/thumbs/torre belem/Torre_Belem_small2010.jpg",
             "image": "gallery/images/torre belem/Torre_Belem_small2010.jpg",
