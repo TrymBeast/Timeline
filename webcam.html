@@ -7,6 +7,7 @@
 		<script>
 			jQuery(document).ready(
 				function(){
+					webcam.init('video', 'input#snapshot', 'img');
 					webcam.show();
 				}
 			);
@@ -14,7 +15,9 @@
 	</head>
 	<body>
 		<div id="webcam">
-			<video id="sourcevid" autoplay></video>
+			<video id="livewebcam" autoplay></video>
+			<img class="snapshot" src="">
+			<canvas class="snapshot" style="display:none;"></canvas>
 			<input type="button" id="snapshot" value="Take snapshot">
 		</div>
 	</body>

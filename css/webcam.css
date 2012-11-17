@@ -9,3 +9,10 @@ div#webcam {
 	display: none;
 	z-index: 99999;
 }
+
+.snapshot, video#livewebcam {
+	width: 320px;
+	height: 240px;
+	background: rgba(255, 255, 255, 0.5);
+	border: 1px solid #CCC;
+}
